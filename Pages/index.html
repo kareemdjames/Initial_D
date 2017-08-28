@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Initial D</title>
+</head>
+<style type="text/css">
+  html, body {
+    margin: 50;
+    height: 100%;
+    min-height: 100%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/initial_d_logo_black_trans.jpg);
+  }
+  header {
+    background-image: url(../img/initial_d_header_image.jpeg);
+    background-size: cover;
+    height: 200px;
+  }
+  .footerFlex {
+    display: flex;
+    height: 200px;
+  }
+  #advert {
+    flex: 1;
+    background-image: url(../img/advertise.jpeg);
+    background-size: cover;
+  }
+  #sm {
+    flex: 2;
+    background-image: url(../img/facebook_logo.jpg);
+  }
+  #addLinks {
+    flex: 2;
+    background-color: blue;
+  }
+  .mainFlex {
+    display: flex;
+    height: 800px;
+    margin: 20px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .characters {
+    flex: 1;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+  }
+  .characters:hover {
+    flex: 2;
+    transition: 2s;
+  }
+  #takumi {
+    background-image: url(../img/initial_d_takumi.jpg);
+  }
+  #keisuke {
+    background-image: url(../img/initial_d_keisuke.jpg);
+  }
+  #ryosuke {
+    background-image: url(../img/initial_d_ryosuke.jpg);
+  }
+  #bunta {
+    background-image: url(../img/initial_d_bunta.jpg);
+  }
+  #kareem {
+    background-image: url(../img/kareem_miami.jpg)
+  }
+  .modalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+  .modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255,255,255,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+</style>
+
+<body>
+  <header></header>
+  <section>
+    <article>
+      <h1>Initial D</h1>
+      <p> Initial D (Japanese: 頭文字Dイニシャル・ディー Hepburn: Inisharu Dī) is a Japanese sports manga series written and illustrated by Shuichi Shigeno. It was serialized in Young Magazine from 1995 to 2013, with the chapters collected into 48 tankōbon volumes by Kodansha. The story focuses on the world of illegal Japanese street racing, where all the action is concentrated in the mountain passes and rarely in cities or urban areas, and with the drift racing style emphasized in particular. Professional race car driver and pioneer of drifting Keiichi Tsuchiya helped with editorial supervision. The story is centered on the prefecture of Gunma, more specifically on several mountains in the Kantō region and in their surrounding cities and towns. Although some of the names of the locations the characters race in have been fictionalized, all of the locations in the series are based on actual locations in Japan.
+
+      Initial D has been adapted into several anime television and original video animations series by OB Studio Comet, Studio Gallop, Pastel, A.C.G.T and SynergySP. A live action film by Avex and Media Asia was released in 2005. Both the manga and anime series were initially licensed for English-language distribution in North America by Tokyopop (2002–2009),[1] however, the anime license has since been picked up by Funimation, while the manga is no longer available in English.</p>
+    </article>
+  </section>
+  <h1>Characters</h1>
+  <div class="mainFlex">
+    <div class="characters" id="takumi"><a href="takumi_profile.html"> Takumi Fujiwara</a></div>
+    <div class="characters" id="keisuke"><a href="keisuke_profile.html">Keisuke Takahashi</a></div>
+    <div class="characters" id="ryosuke"><a href="ryosuke_profile.html">Ryosuke Takahashi</a></div>
+    <div class="characters" id="bunta"><a href="bunta_profile.html">Bunta Fujiwara</a></div>
+    <div class="characters" id="kareem"><a href="kareem_profile.html">Kareem James</a></div>
+  </div>
+    <div class="footerFlex">
+      <div id="advert"></div>
+      <div id="sm"><a href="https://en.wikipedia.org/wiki/Initial_D">Wikipedia</a></div>
+      <div id="addLinks"></div>
+      <div id="advert"></div>
+  </div>
+    <a href="#openModal">Advertise Here</a>
+    <div id="openModal" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Advertise Here</h2>
+        <p>THis can be your ad.</p>
+        <p>You can readh thousands of Initial D for eye opening prices</p>
+      </div>
+  </div>
+
+
+</body>
+</html>
